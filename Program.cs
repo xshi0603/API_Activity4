@@ -13,24 +13,24 @@ interface TesterInterface {
 	string this[int i] {
 		get;
 		set;
-    }
+	}
 }
 
 class TesterClass : TesterInterface {
 	//instance method
 	void testMethod() {
 		Console.WriteLine("Hello!");
-    }
+	}
 
 	//property
 	private string name = "Test Name";
 	public string Item {
 		get {
 			return name;
-        }
+		}
 		set {
 			name = value;
-        }
+		}
     }
 
 	//indexer
