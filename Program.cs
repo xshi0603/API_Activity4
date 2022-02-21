@@ -31,7 +31,7 @@ class TesterClass : TesterInterface {
 		set {
 			name = value;
 		}
-    }
+	}
 
 	//indexer
 	private string[] arr = new string[100];
