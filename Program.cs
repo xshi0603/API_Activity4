@@ -2,8 +2,7 @@ using System;
 
 public delegate void ExampleDelegate();
 
-interface TesterInterface
-{
+interface TesterInterface {
 	//instance methods
 	void testMethod();
 
@@ -11,8 +10,7 @@ interface TesterInterface
 	string Item { get; set; }
 
 	//indexer
-	string this[int i] 
-    {
+	string this[int i] {
 		get;
 		set;
     }
@@ -21,21 +19,17 @@ interface TesterInterface
 class TesterClass : TesterInterface
 {
 	//instance method
-	void testMethod()
-    {
+	void testMethod() {
 		Console.WriteLine("Hello!");
     }
 
 	//property
 	private string name = "Test Name";
-	public string Item
-    {
-		get
-        {
+	public string Item {
+		get {
 			return name;
         }
-		set
-        {
+		set {
 			name = value;
         }
     }
@@ -43,8 +37,7 @@ class TesterClass : TesterInterface
 	//indexer
 	private string[] arr = new string[100];
 	
-	public string this[int i]
-	{
+	public string this[int i] {
 		get { return arr[i]; }
 		set { arr[i] = value; }
 	}
@@ -52,8 +45,7 @@ class TesterClass : TesterInterface
 
 class Program
 {
-	static void Main()
-    {
+	static void Main() {
 		TesterClass tc1 = new TesterClass();
 
 		//instance method
