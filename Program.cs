@@ -16,8 +16,7 @@ interface TesterInterface {
     }
 }
 
-class TesterClass : TesterInterface
-{
+class TesterClass : TesterInterface {
 	//instance method
 	void testMethod() {
 		Console.WriteLine("Hello!");
@@ -43,8 +42,7 @@ class TesterClass : TesterInterface
 	}
 }
 
-class Program
-{
+class Program {
 	static void Main() {
 		TesterClass tc1 = new TesterClass();
 
